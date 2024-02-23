@@ -1,0 +1,10 @@
+.btns{
+    color: rgb(0, 0, 0);
+    background-color: rgb(43, 255, 0);
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}

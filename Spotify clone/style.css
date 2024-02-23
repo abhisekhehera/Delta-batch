@@ -1,0 +1,374 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #000;
+    width: 400px;
+    border-radius: 0.7rem;
+}
+
+.main_content {
+    flex: 1;
+    overflow: auto;
+    border-radius: 0.7rem;
+    background-color: #121212;
+    margin: 0.5rem;
+    height: 521px;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 0.7rem;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+}
+
+.nav_option {
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+
+.nav_option:hover {
+    opacity: 1;
+}
+
+.nav_option i {
+    font-size: 1.5rem;
+    padding-left: 0.9rem;
+    cursor: pointer;
+}
+
+.nav_option a {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left img {
+    height: 1.4rem;
+    width: 1.4rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.left img:hover {
+    opacity: 1;
+}
+
+.left a {
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.left a:hover {
+    opacity: 1;
+}
+
+
+.library {
+    background-color: #121212;
+    border-radius: 0.7rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    height: 386px;
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.right i {
+    opacity: 0.7;
+}
+
+.right i:hover {
+    opacity: 1;
+}
+
+.library_nav .library_option {
+    height: 120px;
+    padding: 0.5rem 0.75rem 0 0.75rem;
+    background-color: rgba(255, 255, 255, 0.126);
+    border-radius: 0.7rem;
+    margin-bottom: 20px;
+
+}
+
+.library_option h3 {
+    font-size: 1rem;
+}
+
+.library_option p {
+    font-size: 0.9rem;
+}
+
+.btn {
+    font-size: 0.9rem;
+    border-radius: 30px;
+    outline: none;
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+    padding: 5px 19px 4px 19px;
+    font-weight: 600;
+    border: none;
+}
+
+.upper {
+    position: sticky;
+    top: 0;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+    height: 60px;
+
+
+}
+
+.btn_transprent {
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    outline: none;
+    height: 27px;
+    width: auto;
+    padding: 5px 19px 4px 19px;
+    font-weight: 600;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 3, 3);
+}
+
+.main_content .upper .right .wraper {
+    background-color: rgba(255, 255, 255, 0.105);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    height: 1.3rem;
+    width: 1.3rem;
+    padding: 3px;
+}
+
+.Cards {
+    margin: 1.5rem;
+}
+
+.Cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.card {
+    height: 260px;
+    width: 160px;
+    background-color: #272727;
+    border-radius: 0.7rem;
+    padding: 0.9rem;
+    cursor: pointer;
+}
+
+.card img {
+    height: 160px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.card .card_title {
+    font-weight: 600;
+}
+
+.card .card_info {
+    font-size: 0.7rem;
+}
+
+.music_player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.music_player .left {
+    width: 350px;
+
+    height: 100%;
+
+}
+
+.music_player .left .file_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.music_player .left .file_info img {
+    height: 56px;
+    width: 56px;
+    filter: brightness(100%);
+    margin-left: 10px;
+    border-radius: 6px;
+
+}
+
+.music_player .left .file_info .song_name {
+    font-size: 13px;
+}
+
+.music_player .left .file_info .Playlist_info {
+    font-size: 11px;
+}
+
+.music_player .left .file_info i {
+    font-size: 18px;
+}
+
+.music_player .center {
+    flex: 1;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    height: 50%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.7;
+}
+
+.center .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 15px;
+}
+
+.center .icons img {
+    height: 1rem;
+    opacity: 0.7;
+}
+
+.center .icons img:hover {
+    opacity: 1;
+}
+
+.center .player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.player input {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.player input::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.player input::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.music_player .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+}
+
+.music_player .right img {
+    height: 2.7rem;
+}
+
+.music_player .right input::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: .2rem;
+    cursor: pointer;
+}
+
+.music_player .right input::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}

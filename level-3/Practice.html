@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Level 3 HTML</title>
+</head>
+
+<body>
+    <b>
+        <!-- Q1. Recrete the following table using HTML -->
+
+        <table border="black">
+            <caption>Student Information</caption>
+
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+
+
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkta</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+
+
+        </table>
+
+        <br><br><br>
+        <hr>
+
+        <!-- Q2 Recreate the following form using HTML -->
+
+        <form action="/serevr">
+            <label for="fname"></label>
+            <input type="text" name="fname" placeholder="First Name" id="fname" />
+
+            <label for="lname"></label>
+            <input type="text" name="lname" placeholder="Last Name" id="lname" />
+            <br />
+            Sex :
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <br>
+            <select name="Country" id="Country">
+                <option>Select an option</option>
+                <option value="Ind">India</option>
+                <option value="Usa">U.S.A</option>
+                <option value="japan">japan</option>
+                <option value="uae">U.A.E</option>
+            </select>
+            <br>
+            <label for="msg">Message:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <br>
+            <input type="checkbox" name="sub" id="sub">
+            <label for="sub">Subscribe?</label>
+
+            <br>
+            <button>Submit</button>
+            <button>Reset</button>
+        </form>
+
+        <!-- Q3 Recrete the following form using HTML -->
+        <h1>Feedbck Form</h1>
+        <form action="/server">
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" name="name " placeholder="Enter your Name">
+            <br>
+            <label for="email">Enter your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+            <br>
+            <label for="msg">Message:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+<br>
+            Rate us out of 5:
+            <br>
+            <label for="1">1 :</label>
+            <input type="radio" name="num" id="1" value="1">
+            <br>
+            <label for="2">2 :</label>
+            
+            <input type="radio" name="num" id="2" value="2">
+            <br>
+            <label for="3">3 :</label>
+            
+            <input type="radio" name="num" id="3" value="3">
+            <br>
+            <label for="4">4 :</label>
+           
+            <input type="radio" name="num" id="4" value="4">
+            <br>
+            <label for="5">5 :</label>
+            <input type="radio" name="num" id="5" value="5">
+
+<br>
+            <button>Send your Message!</button>
+        </form>
+
+
+    </b>
+</body>
+
+</html>
